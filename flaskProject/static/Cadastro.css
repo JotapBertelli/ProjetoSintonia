@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5; /* Cor de fundo suave */
+}
+
+.card-cadastro {
+    background-color: white;
+    width: 100%;
+    max-width: 1400px; /* Largura máxima aumentada */
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    margin: 20px; /* Adicionado margem para espaçamento ao redor */
+}
+
+.foto-cadastro {
+    width: 50%;
+    max-width: 50%;
+}
+
+.div-login {
+    background-color: #f5f5f5;
+    width: 100%;
+    max-width: 500px; /* Reduzindo um pouco a largura */
+    border-radius: 0 0 20px 20px; /* Arredondamento apenas na parte inferior */
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px; /* Espaçamento inferior reduzido */
+}
+
+.titulo-login{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Cor do texto ajustada */
+}
+
+.imagemUsuario {
+    align-self: center; /* Alinhamento vertical ao centro */
+    width: 60px;
+    margin-bottom: 20px; /* Espaçamento inferior reduzido */
+}
+
+.formField {
+  margin: 10px;
+  position: relative;
+}
+
+.formField input {
+  padding: 20px 15px 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #e6e6e6; /* Cor de fundo mais suave */
+  color: #333; /* Cor do texto */
+  font-size: 16px;
+  font-weight: 550;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 0 5px transparent;
+}
+
+.formField input:hover,
+.formField input:focus {
+  box-shadow: 0 0 0 2px #6c63ff; /* Cor da borda ao passar o mouse ou focar */
+}
+
+.formField span {
+  position: absolute;
+  left: 15px; /* Ajuste a posição do placeholder */
+  top: 10px; /* Ajuste a posição do placeholder */
+  color: #888; /* Cor do texto do placeholder */
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.formField input:focus + span,
+.formField input:valid + span {
+  transform: translateY(-25px) translateX(-5px) scale(0.8); /* Ajuste do placeholder */
+  transition: 0.3s ease-in-out;
+}
+
+
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #1f387e;
+  box-shadow: 0 0 0 2px #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: #1f387e;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #c5e5e4;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #1f387e;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+.text-login{
+    text-decoration: none;
+
+}
